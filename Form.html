@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            background-color: lightgray; /* Set background color to light gray */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Simple Form</h2>
+
+<form action="/submit_form" method="post">
+    <!-- Username field -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Password field -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Email field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Age field -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+    <!-- Gender selection -->
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Interests selection -->
+    <label for="interests">Interests:</label><br>
+    <input type="radio" id="music" name="interests" value="music">
+    <label for="music"> Music</label><br>
+    <input type="radio" id="sports" name="interests" value="sports">
+    <label for="sports"> Sports</label><br>
+    <input type="radio" id="reading" name="interests" value="reading">
+    <label for="reading"> Reading</label><br><br>
+
+    <!-- Bio textarea -->
+    <label for="bio">Bio:</label><br>
+    <textarea id="bio" name="bio" rows="4" cols="50" required></textarea><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <style>
+        body {
+            background-color: lightgray; /* Set background color to light gray */
+        }
+    </style>
+</head>
+<body>
+
+<h4>Chapter 2: DATABASE</h4>
+<p>
+    A database of an online learning platform is a structured collection of data related to the platform's users, courses, content, interactions, and other relevant information. It typically includes tables that store data such as user profiles and course details.
+</p>
+
+<h5>2.2 SECTION1:</h5>
+
+<h3>2.2.1 ENTITIES</h3>
+<p>
+    An entity refers to a distinct object or concept about which data is stored. Entities are typically represented as tables in a relational database, where each row in the table represents an instance of that entity, and each column represents a specific attribute or characteristic of that entity.
+</p>
+
+<h4>1. CREATE TABLE course</h4>
+<p>
+    CREATE TABLE course (
+    <br>
+    course_id int(15) NOT NULL,<br>
+    course_name varchar(220) NOT NULL,<br>
+    instructor varchar(220) NOT NULL,<br>
+    description_text varchar(220) NOT NULL,<br>
+    credit varchar(220) NOT NULL
+    );
+</p>
+
+<h4>2. CREATE TABLE examination</h4>
+<p>
+    CREATE TABLE examination (
+    <br>
+    examination_id int(20) NOT NULL,<br>
+    examination_name varchar(220) NOT NULL,<br>
+    examination_date varchar(220) NOT NULL,<br>
+    subject varchar(202) NOT NULL
+    );
+</p>
+
+<h4>3. CREATE TABLE lecture</h4>
+<p>
+    CREATE TABLE lecture (
+    <br>
+    lecture_id int(15) NOT NULL,<br>
+    first_name varchar(220) NOT NULL,<br>
+    last_name varchar(220) NOT NULL,<br>
+    specialization varchar(220) NOT NULL,<br>
+    email varchar(220) NOT NULL
+    );
+</p>
+
+<h4>4. CREATE TABLE signup</h4>
+<p>
+    CREATE TABLE signup (
+    <br>
+    id int(20) NOT NULL,<br>
+    first_name varchar(220) NOT NULL,<br>
+    last_name varchar(220) NOT NULL,<br>
+    email varchar(202) NOT NULL,<br>
+    password varchar(202) NOT NULL
+    );
+</p>
+
+<h4>5. CREATE TABLE student</h4>
+<p>
+    CREATE TABLE student (
+    <br>
+    student_id int(11) NOT NULL,<br>
+    first_name varchar(220) NOT NULL,<br>
+    last_name varchar(220) NOT NULL,<br>
+    email varchar(202) NOT NULL,<br>
+    age int(202) NOT NULL
+    );
+</p>
+
+</body>
+</html>
